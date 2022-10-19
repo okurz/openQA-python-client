@@ -35,7 +35,7 @@ setup(
     url="https://github.com/os-autoinst/openQA-python-client",
     packages=["openqa_client"],
     package_dir={"": "src"},
-    install_requires=open('install.requires').read().splitlines(),
+    install_requires=open(os.path.join(HERE, 'install.requires')).read().splitlines(),
     python_requires="!=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*, !=3.5.*, <4",
     long_description=LONGDESC,
     long_description_content_type='text/markdown',
